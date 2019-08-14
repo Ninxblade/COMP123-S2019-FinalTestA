@@ -130,11 +130,11 @@ namespace COMP123_S2019_FinalTestA.Views
         {
             var fnamerandom = new Random();
             int fnameindex = fnamerandom.Next(FirstNameList.Count);
-            FirstNameDataLabel.Text = fnameindex.ToString();
+            FirstNameDataLabel.Text = (FirstNameList[fnamerandom.Next(0, FirstNameList.Count)]);
 
             var lnamerandom = new Random();
             int lnameindex = lnamerandom.Next(LastNameList.Count);
-            LastNameDataLabel.Text = lnameindex.ToString();
+            LastNameDataLabel.Text = (LastNameList[lnamerandom.Next(0, LastNameList.Count)]);
         }
         public void LoadPowers()
         {
@@ -160,13 +160,14 @@ namespace COMP123_S2019_FinalTestA.Views
         }
         public void GenerateRnadomPowers()
         {
-            //Display number format instead of string
+           
             var randomPower = new Random();
             int powerindex = randomPower.Next(Powers.Count);
-            Power1Datalabel.Text = powerindex.ToString();
-            Power2Datalabel.Text = powerindex.ToString();
-            Power3Datalabel.Text = powerindex.ToString();
-            Power4Datalabel.Text = powerindex.ToString();
+            //displaying words
+            Power1Datalabel.Text = (Powers[randomPower.Next(0, Powers.Count)]);
+            Power2Datalabel.Text = (Powers[randomPower.Next(0, Powers.Count)]);
+            Power3Datalabel.Text = (Powers[randomPower.Next(0, Powers.Count)]);
+            Power4Datalabel.Text = (Powers[randomPower.Next(0, Powers.Count)]);
         }
 
         private void GeneratePowerButton_Click(object sender, EventArgs e)
