@@ -74,20 +74,46 @@
             this.GenerateAbilitesButton = new System.Windows.Forms.Button();
             this.MentalAbilitiesLabel = new System.Windows.Forms.Label();
             this.PowersTabPage = new System.Windows.Forms.TabPage();
+            this.GeneratePowerButton = new System.Windows.Forms.Button();
+            this.PowerLabel = new System.Windows.Forms.Label();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.label8 = new System.Windows.Forms.Label();
+            this.Power1Datalabel = new System.Windows.Forms.Label();
+            this.Power2Datalabel = new System.Windows.Forms.Label();
+            this.Power3Datalabel = new System.Windows.Forms.Label();
+            this.Power4Datalabel = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.CharacterSheetTabPage = new System.Windows.Forms.TabPage();
             this.NextButton = new System.Windows.Forms.Button();
             this.BackButton = new System.Windows.Forms.Button();
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.PowerLabel = new System.Windows.Forms.Label();
-            this.GeneratePowerButton = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.Power1Datalabel = new System.Windows.Forms.Label();
-            this.Power3Datalabel = new System.Windows.Forms.Label();
-            this.Power4Datalabel = new System.Windows.Forms.Label();
-            this.Power2Datalabel = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.Fnamelabel = new System.Windows.Forms.Label();
+            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
+            this.label24 = new System.Windows.Forms.Label();
+            this.label25 = new System.Windows.Forms.Label();
+            this.label26 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label22 = new System.Windows.Forms.Label();
+            this.label23 = new System.Windows.Forms.Label();
+            this.CharacterSheetMenuStrip = new System.Windows.Forms.MenuStrip();
+            this.fileToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.openToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+            this.saveToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.exitToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.label27 = new System.Windows.Forms.Label();
+            this.ChacterSaveFileDialog = new System.Windows.Forms.SaveFileDialog();
             this.MainTabControl.SuspendLayout();
             this.IdentityTabPage.SuspendLayout();
             this.HeroToolStrip.SuspendLayout();
@@ -96,6 +122,9 @@
             this.AbilitiesTableLayoutPanel.SuspendLayout();
             this.PowersTabPage.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
+            this.CharacterSheetTabPage.SuspendLayout();
+            this.tableLayoutPanel2.SuspendLayout();
+            this.CharacterSheetMenuStrip.SuspendLayout();
             this.SuspendLayout();
             // 
             // MainTabControl
@@ -150,6 +179,7 @@
             this.EnterHeroTextBox.Name = "EnterHeroTextBox";
             this.EnterHeroTextBox.Size = new System.Drawing.Size(337, 29);
             this.EnterHeroTextBox.TabIndex = 3;
+            this.EnterHeroTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // LastNameLabel
             // 
@@ -281,13 +311,13 @@
             this.openToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.openToolStripMenuItem.Name = "openToolStripMenuItem";
             this.openToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.O)));
-            this.openToolStripMenuItem.Size = new System.Drawing.Size(184, 26);
+            this.openToolStripMenuItem.Size = new System.Drawing.Size(150, 26);
             this.openToolStripMenuItem.Text = "&Open";
             // 
             // toolStripSeparator
             // 
             this.toolStripSeparator.Name = "toolStripSeparator";
-            this.toolStripSeparator.Size = new System.Drawing.Size(181, 6);
+            this.toolStripSeparator.Size = new System.Drawing.Size(147, 6);
             // 
             // saveToolStripMenuItem
             // 
@@ -295,19 +325,19 @@
             this.saveToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
             this.saveToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
-            this.saveToolStripMenuItem.Size = new System.Drawing.Size(184, 26);
+            this.saveToolStripMenuItem.Size = new System.Drawing.Size(150, 26);
             this.saveToolStripMenuItem.Text = "&Save";
             this.saveToolStripMenuItem.Click += new System.EventHandler(this.SaveToolStripMenuItem_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(181, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(147, 6);
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(184, 26);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(150, 26);
             this.exitToolStripMenuItem.Text = "E&xit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.ExitToolStripMenuItem_Click);
             // 
@@ -322,7 +352,7 @@
             // aboutToolStripMenuItem
             // 
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(116, 22);
             this.aboutToolStripMenuItem.Text = "&About...";
             // 
             // AbilitiesTabPage
@@ -606,8 +636,152 @@
             this.PowersTabPage.UseVisualStyleBackColor = true;
             this.PowersTabPage.Click += new System.EventHandler(this.PowersTabPage_Click);
             // 
+            // GeneratePowerButton
+            // 
+            this.GeneratePowerButton.Location = new System.Drawing.Point(388, 295);
+            this.GeneratePowerButton.Name = "GeneratePowerButton";
+            this.GeneratePowerButton.Size = new System.Drawing.Size(174, 31);
+            this.GeneratePowerButton.TabIndex = 2;
+            this.GeneratePowerButton.Text = "Generate Powers";
+            this.GeneratePowerButton.UseVisualStyleBackColor = true;
+            this.GeneratePowerButton.Click += new System.EventHandler(this.GeneratePowerButton_Click);
+            // 
+            // PowerLabel
+            // 
+            this.PowerLabel.AutoSize = true;
+            this.PowerLabel.Location = new System.Drawing.Point(25, 19);
+            this.PowerLabel.Name = "PowerLabel";
+            this.PowerLabel.Size = new System.Drawing.Size(73, 24);
+            this.PowerLabel.TabIndex = 1;
+            this.PowerLabel.Text = "Powers";
+            // 
+            // tableLayoutPanel1
+            // 
+            this.tableLayoutPanel1.ColumnCount = 4;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel1.Controls.Add(this.label8, 0, 3);
+            this.tableLayoutPanel1.Controls.Add(this.Power1Datalabel, 2, 0);
+            this.tableLayoutPanel1.Controls.Add(this.Power2Datalabel, 2, 1);
+            this.tableLayoutPanel1.Controls.Add(this.Power3Datalabel, 2, 2);
+            this.tableLayoutPanel1.Controls.Add(this.Power4Datalabel, 2, 3);
+            this.tableLayoutPanel1.Controls.Add(this.label2, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.label5, 0, 2);
+            this.tableLayoutPanel1.Controls.Add(this.label3, 0, 1);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(29, 65);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 4;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(533, 211);
+            this.tableLayoutPanel1.TabIndex = 0;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.tableLayoutPanel1.SetColumnSpan(this.label8, 2);
+            this.label8.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label8.Location = new System.Drawing.Point(3, 156);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(260, 55);
+            this.label8.TabIndex = 1;
+            this.label8.Text = "Power 4";
+            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // Power1Datalabel
+            // 
+            this.Power1Datalabel.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.Power1Datalabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tableLayoutPanel1.SetColumnSpan(this.Power1Datalabel, 2);
+            this.Power1Datalabel.Location = new System.Drawing.Point(268, 0);
+            this.Power1Datalabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Power1Datalabel.Name = "Power1Datalabel";
+            this.Power1Datalabel.Size = new System.Drawing.Size(263, 52);
+            this.Power1Datalabel.TabIndex = 4;
+            this.Power1Datalabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // Power2Datalabel
+            // 
+            this.Power2Datalabel.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.Power2Datalabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tableLayoutPanel1.SetColumnSpan(this.Power2Datalabel, 2);
+            this.Power2Datalabel.Location = new System.Drawing.Point(268, 52);
+            this.Power2Datalabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Power2Datalabel.Name = "Power2Datalabel";
+            this.Power2Datalabel.Size = new System.Drawing.Size(263, 52);
+            this.Power2Datalabel.TabIndex = 7;
+            this.Power2Datalabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // Power3Datalabel
+            // 
+            this.Power3Datalabel.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.Power3Datalabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tableLayoutPanel1.SetColumnSpan(this.Power3Datalabel, 2);
+            this.Power3Datalabel.Location = new System.Drawing.Point(268, 104);
+            this.Power3Datalabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Power3Datalabel.Name = "Power3Datalabel";
+            this.Power3Datalabel.Size = new System.Drawing.Size(263, 52);
+            this.Power3Datalabel.TabIndex = 5;
+            this.Power3Datalabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // Power4Datalabel
+            // 
+            this.Power4Datalabel.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.Power4Datalabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tableLayoutPanel1.SetColumnSpan(this.Power4Datalabel, 2);
+            this.Power4Datalabel.Location = new System.Drawing.Point(268, 156);
+            this.Power4Datalabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Power4Datalabel.Name = "Power4Datalabel";
+            this.Power4Datalabel.Size = new System.Drawing.Size(263, 55);
+            this.Power4Datalabel.TabIndex = 6;
+            this.Power4Datalabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.tableLayoutPanel1.SetColumnSpan(this.label2, 2);
+            this.label2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label2.Location = new System.Drawing.Point(3, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(260, 52);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "Power 1";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.tableLayoutPanel1.SetColumnSpan(this.label5, 2);
+            this.label5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label5.Location = new System.Drawing.Point(3, 104);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(260, 52);
+            this.label5.TabIndex = 1;
+            this.label5.Text = "Power 3";
+            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.tableLayoutPanel1.SetColumnSpan(this.label3, 2);
+            this.label3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label3.Location = new System.Drawing.Point(3, 52);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(260, 52);
+            this.label3.TabIndex = 1;
+            this.label3.Text = "Power 2";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // CharacterSheetTabPage
             // 
+            this.CharacterSheetTabPage.Controls.Add(this.tableLayoutPanel2);
+            this.CharacterSheetTabPage.Controls.Add(this.label16);
+            this.CharacterSheetTabPage.Controls.Add(this.CharacterSheetMenuStrip);
             this.CharacterSheetTabPage.Location = new System.Drawing.Point(4, 33);
             this.CharacterSheetTabPage.Margin = new System.Windows.Forms.Padding(2);
             this.CharacterSheetTabPage.Name = "CharacterSheetTabPage";
@@ -638,146 +812,256 @@
             this.BackButton.UseVisualStyleBackColor = true;
             this.BackButton.Click += new System.EventHandler(this.BackButton_Click);
             // 
-            // tableLayoutPanel1
+            // label12
             // 
-            this.tableLayoutPanel1.ColumnCount = 4;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel1.Controls.Add(this.label8, 0, 3);
-            this.tableLayoutPanel1.Controls.Add(this.Power1Datalabel, 2, 0);
-            this.tableLayoutPanel1.Controls.Add(this.Power2Datalabel, 2, 1);
-            this.tableLayoutPanel1.Controls.Add(this.Power3Datalabel, 2, 2);
-            this.tableLayoutPanel1.Controls.Add(this.Power4Datalabel, 2, 3);
-            this.tableLayoutPanel1.Controls.Add(this.label2, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.label5, 0, 2);
-            this.tableLayoutPanel1.Controls.Add(this.label3, 0, 1);
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(29, 65);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 4;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(533, 211);
-            this.tableLayoutPanel1.TabIndex = 0;
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(3, 165);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(72, 24);
+            this.label12.TabIndex = 0;
+            this.label12.Text = "Psyche";
             // 
-            // PowerLabel
+            // label9
             // 
-            this.PowerLabel.AutoSize = true;
-            this.PowerLabel.Location = new System.Drawing.Point(25, 19);
-            this.PowerLabel.Name = "PowerLabel";
-            this.PowerLabel.Size = new System.Drawing.Size(73, 24);
-            this.PowerLabel.TabIndex = 1;
-            this.PowerLabel.Text = "Powers";
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(3, 110);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(104, 24);
+            this.label9.TabIndex = 0;
+            this.label9.Text = "Eudurance";
+            this.label9.Click += new System.EventHandler(this.Label9_Click);
             // 
-            // GeneratePowerButton
+            // Fnamelabel
             // 
-            this.GeneratePowerButton.Location = new System.Drawing.Point(388, 295);
-            this.GeneratePowerButton.Name = "GeneratePowerButton";
-            this.GeneratePowerButton.Size = new System.Drawing.Size(174, 31);
-            this.GeneratePowerButton.TabIndex = 2;
-            this.GeneratePowerButton.Text = "Generate Powers";
-            this.GeneratePowerButton.UseVisualStyleBackColor = true;
-            this.GeneratePowerButton.Click += new System.EventHandler(this.GeneratePowerButton_Click);
+            this.Fnamelabel.AutoSize = true;
+            this.Fnamelabel.Location = new System.Drawing.Point(144, 0);
+            this.Fnamelabel.Name = "Fnamelabel";
+            this.Fnamelabel.Size = new System.Drawing.Size(96, 24);
+            this.Fnamelabel.TabIndex = 0;
+            this.Fnamelabel.Text = "FirstName";
             // 
-            // label2
+            // tableLayoutPanel2
             // 
-            this.label2.AutoSize = true;
-            this.tableLayoutPanel1.SetColumnSpan(this.label2, 2);
-            this.label2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label2.Location = new System.Drawing.Point(3, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(260, 52);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Power 1";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.tableLayoutPanel2.ColumnCount = 4;
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel2.Controls.Add(this.label15, 2, 0);
+            this.tableLayoutPanel2.Controls.Add(this.Fnamelabel, 1, 0);
+            this.tableLayoutPanel2.Controls.Add(this.label10, 0, 0);
+            this.tableLayoutPanel2.Controls.Add(this.label19, 0, 4);
+            this.tableLayoutPanel2.Controls.Add(this.label18, 3, 4);
+            this.tableLayoutPanel2.Controls.Add(this.label21, 1, 1);
+            this.tableLayoutPanel2.Controls.Add(this.label26, 2, 1);
+            this.tableLayoutPanel2.Controls.Add(this.label14, 3, 1);
+            this.tableLayoutPanel2.Controls.Add(this.label9, 0, 2);
+            this.tableLayoutPanel2.Controls.Add(this.label20, 1, 2);
+            this.tableLayoutPanel2.Controls.Add(this.label25, 2, 2);
+            this.tableLayoutPanel2.Controls.Add(this.label17, 3, 2);
+            this.tableLayoutPanel2.Controls.Add(this.label12, 0, 3);
+            this.tableLayoutPanel2.Controls.Add(this.label24, 0, 1);
+            this.tableLayoutPanel2.Controls.Add(this.label23, 1, 3);
+            this.tableLayoutPanel2.Controls.Add(this.label22, 2, 4);
+            this.tableLayoutPanel2.Controls.Add(this.label27, 1, 4);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(8, 37);
+            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
+            this.tableLayoutPanel2.RowCount = 5;
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(565, 278);
+            this.tableLayoutPanel2.TabIndex = 0;
+            this.tableLayoutPanel2.Paint += new System.Windows.Forms.PaintEventHandler(this.TableLayoutPanel2_Paint);
             // 
-            // label3
+            // label14
             // 
-            this.label3.AutoSize = true;
-            this.tableLayoutPanel1.SetColumnSpan(this.label3, 2);
-            this.label3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label3.Location = new System.Drawing.Point(3, 52);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(260, 52);
-            this.label3.TabIndex = 1;
-            this.label3.Text = "Power 2";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(426, 55);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(80, 24);
+            this.label14.TabIndex = 0;
+            this.label14.Text = "Strength";
             // 
-            // label5
+            // label15
             // 
-            this.label5.AutoSize = true;
-            this.tableLayoutPanel1.SetColumnSpan(this.label5, 2);
-            this.label5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label5.Location = new System.Drawing.Point(3, 104);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(260, 52);
-            this.label5.TabIndex = 1;
-            this.label5.Text = "Power 3";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(285, 0);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(94, 24);
+            this.label15.TabIndex = 1;
+            this.label15.Text = "LastName";
             // 
-            // label8
+            // label16
             // 
-            this.label8.AutoSize = true;
-            this.tableLayoutPanel1.SetColumnSpan(this.label8, 2);
-            this.label8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label8.Location = new System.Drawing.Point(3, 156);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(260, 55);
-            this.label8.TabIndex = 1;
-            this.label8.Text = "Power 4";
-            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(334, 293);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(74, 24);
+            this.label16.TabIndex = 2;
+            this.label16.Text = "Power3";
             // 
-            // Power1Datalabel
+            // label17
             // 
-            this.Power1Datalabel.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.Power1Datalabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.tableLayoutPanel1.SetColumnSpan(this.Power1Datalabel, 2);
-            this.Power1Datalabel.Location = new System.Drawing.Point(268, 0);
-            this.Power1Datalabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.Power1Datalabel.Name = "Power1Datalabel";
-            this.Power1Datalabel.Size = new System.Drawing.Size(263, 52);
-            this.Power1Datalabel.TabIndex = 4;
-            this.Power1Datalabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label17.AutoSize = true;
+            this.label17.Location = new System.Drawing.Point(426, 110);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(92, 24);
+            this.label17.TabIndex = 3;
+            this.label17.Text = "Popularity";
             // 
-            // Power3Datalabel
+            // label18
             // 
-            this.Power3Datalabel.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.Power3Datalabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.tableLayoutPanel1.SetColumnSpan(this.Power3Datalabel, 2);
-            this.Power3Datalabel.Location = new System.Drawing.Point(268, 104);
-            this.Power3Datalabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.Power3Datalabel.Name = "Power3Datalabel";
-            this.Power3Datalabel.Size = new System.Drawing.Size(263, 52);
-            this.Power3Datalabel.TabIndex = 5;
-            this.Power3Datalabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label18.AutoSize = true;
+            this.label18.Location = new System.Drawing.Point(426, 220);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(74, 24);
+            this.label18.TabIndex = 4;
+            this.label18.Text = "Power4";
             // 
-            // Power4Datalabel
+            // label19
             // 
-            this.Power4Datalabel.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.Power4Datalabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.tableLayoutPanel1.SetColumnSpan(this.Power4Datalabel, 2);
-            this.Power4Datalabel.Location = new System.Drawing.Point(268, 156);
-            this.Power4Datalabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.Power4Datalabel.Name = "Power4Datalabel";
-            this.Power4Datalabel.Size = new System.Drawing.Size(263, 55);
-            this.Power4Datalabel.TabIndex = 6;
-            this.Power4Datalabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label19.AutoSize = true;
+            this.label19.Location = new System.Drawing.Point(3, 220);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(74, 24);
+            this.label19.TabIndex = 5;
+            this.label19.Text = "Power1";
             // 
-            // Power2Datalabel
+            // label20
             // 
-            this.Power2Datalabel.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.Power2Datalabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.tableLayoutPanel1.SetColumnSpan(this.Power2Datalabel, 2);
-            this.Power2Datalabel.Location = new System.Drawing.Point(268, 52);
-            this.Power2Datalabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.Power2Datalabel.Name = "Power2Datalabel";
-            this.Power2Datalabel.Size = new System.Drawing.Size(263, 52);
-            this.Power2Datalabel.TabIndex = 7;
-            this.Power2Datalabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label20.AutoSize = true;
+            this.label20.Location = new System.Drawing.Point(144, 110);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(75, 24);
+            this.label20.TabIndex = 6;
+            this.label20.Text = "Reason";
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Location = new System.Drawing.Point(144, 55);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(78, 24);
+            this.label21.TabIndex = 7;
+            this.label21.Text = "Fighting";
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Location = new System.Drawing.Point(3, 55);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(68, 24);
+            this.label24.TabIndex = 10;
+            this.label24.Text = "Abilitys";
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Location = new System.Drawing.Point(285, 110);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(74, 24);
+            this.label25.TabIndex = 11;
+            this.label25.Text = "Intuition";
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.Location = new System.Drawing.Point(285, 55);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(55, 24);
+            this.label26.TabIndex = 12;
+            this.label26.Text = "Agiliy";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(3, 0);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(61, 24);
+            this.label10.TabIndex = 13;
+            this.label10.Text = "Name";
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Location = new System.Drawing.Point(285, 220);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(74, 24);
+            this.label22.TabIndex = 14;
+            this.label22.Text = "Power3";
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Location = new System.Drawing.Point(144, 165);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(73, 24);
+            this.label23.TabIndex = 0;
+            this.label23.Text = "Powers";
+            this.label23.Click += new System.EventHandler(this.Label9_Click);
+            // 
+            // CharacterSheetMenuStrip
+            // 
+            this.CharacterSheetMenuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.fileToolStripMenuItem1});
+            this.CharacterSheetMenuStrip.Location = new System.Drawing.Point(0, 0);
+            this.CharacterSheetMenuStrip.Name = "CharacterSheetMenuStrip";
+            this.CharacterSheetMenuStrip.Size = new System.Drawing.Size(606, 24);
+            this.CharacterSheetMenuStrip.TabIndex = 3;
+            this.CharacterSheetMenuStrip.Text = "menuStrip1";
+            // 
+            // fileToolStripMenuItem1
+            // 
+            this.fileToolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.openToolStripMenuItem1,
+            this.toolStripSeparator2,
+            this.saveToolStripMenuItem1,
+            this.exitToolStripMenuItem1});
+            this.fileToolStripMenuItem1.Name = "fileToolStripMenuItem1";
+            this.fileToolStripMenuItem1.Size = new System.Drawing.Size(37, 20);
+            this.fileToolStripMenuItem1.Text = "&File";
+            // 
+            // openToolStripMenuItem1
+            // 
+            this.openToolStripMenuItem1.Image = ((System.Drawing.Image)(resources.GetObject("openToolStripMenuItem1.Image")));
+            this.openToolStripMenuItem1.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.openToolStripMenuItem1.Name = "openToolStripMenuItem1";
+            this.openToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.openToolStripMenuItem1.Text = "&Open";
+            this.openToolStripMenuItem1.Click += new System.EventHandler(this.OpenToolStripMenuItem1_Click);
+            // 
+            // toolStripSeparator2
+            // 
+            this.toolStripSeparator2.Name = "toolStripSeparator2";
+            this.toolStripSeparator2.Size = new System.Drawing.Size(177, 6);
+            // 
+            // saveToolStripMenuItem1
+            // 
+            this.saveToolStripMenuItem1.Image = ((System.Drawing.Image)(resources.GetObject("saveToolStripMenuItem1.Image")));
+            this.saveToolStripMenuItem1.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.saveToolStripMenuItem1.Name = "saveToolStripMenuItem1";
+            this.saveToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.saveToolStripMenuItem1.Text = "&Save";
+            this.saveToolStripMenuItem1.Click += new System.EventHandler(this.SaveToolStripMenuItem1_Click_1);
+            // 
+            // exitToolStripMenuItem1
+            // 
+            this.exitToolStripMenuItem1.Name = "exitToolStripMenuItem1";
+            this.exitToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.exitToolStripMenuItem1.Text = "E&xit";
+            this.exitToolStripMenuItem1.Click += new System.EventHandler(this.ExitToolStripMenuItem1_Click_1);
+            // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.Location = new System.Drawing.Point(144, 220);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(74, 24);
+            this.label27.TabIndex = 14;
+            this.label27.Text = "Power2";
             // 
             // HeroGenerator
             // 
@@ -804,6 +1088,12 @@
             this.PowersTabPage.PerformLayout();
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
+            this.CharacterSheetTabPage.ResumeLayout(false);
+            this.CharacterSheetTabPage.PerformLayout();
+            this.tableLayoutPanel2.ResumeLayout(false);
+            this.tableLayoutPanel2.PerformLayout();
+            this.CharacterSheetMenuStrip.ResumeLayout(false);
+            this.CharacterSheetMenuStrip.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -869,5 +1159,31 @@
         private System.Windows.Forms.Label Power2Datalabel;
         private System.Windows.Forms.Label Power3Datalabel;
         private System.Windows.Forms.Label Power4Datalabel;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
+        private System.Windows.Forms.Label label26;
+        private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.Label label24;
+        private System.Windows.Forms.Label Fnamelabel;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.MenuStrip CharacterSheetMenuStrip;
+        private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem openToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
+        private System.Windows.Forms.ToolStripMenuItem saveToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem1;
+        private System.Windows.Forms.Label label27;
+        private System.Windows.Forms.SaveFileDialog ChacterSaveFileDialog;
     }
 }
