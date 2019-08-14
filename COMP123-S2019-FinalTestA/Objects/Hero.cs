@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.IO;
+using COMP123_S2019_FinalTestA.Views;
 /*
  * 
  * STUDNET NAME: Jason Li
@@ -11,7 +13,7 @@ using System.Threading.Tasks;
  */
 namespace COMP123_S2019_FinalTestA.Objects
 {
-    class Hero
+    public class Hero
     {
         // PRIVATE INSTANCE VARIABLES
         private string m_figthing;
@@ -26,7 +28,7 @@ namespace COMP123_S2019_FinalTestA.Objects
 
         //Identity
         public string HeroName { get; set; }
-        public string FristName { get; set; }
+        public string FirstName { get; set; }
         public string LastName { get; set; }
 
         //Physical Abilities
@@ -132,13 +134,14 @@ namespace COMP123_S2019_FinalTestA.Objects
         public int Health { get; set; }
         public int Krama { get; set; }
         //Power List
-        List<Power> Powers;
+       public  List<Power> Powers;
+
 
         //Consutructor 
-        Hero()
+        public Hero()
         {
             Powers = new List<Power>();
+            
         }
-
     }
 }
